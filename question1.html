@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+		<title>
+			Display message 
+			after clicking the button
+		</title>
+	</head>
+	
+	<body style = "text-align:center; font-size: 35px;">
+		
+		<h1 style = "color:green; font-size: 28px;" >
+			Question 1
+		</h1>
+				
+        <button style="font-size: 35px; color:blueviolet; margin-top: 200px;" type='button' id=my_button>Click Here</button>
+        <span id=quote></span>
+
+     
+        <script>
+            $(document).ready(function() {
+            
+            $("#my_button").click(function(){
+            $("#quote").html('Welcome!');
+            })
+            
+            })
+        </script>
+	</body>
+</html>					

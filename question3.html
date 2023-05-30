@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+		<title>
+			Change the background color
+			with two style properties
+		</title>
+	</head>
+	
+	<body style = "text-align:center;">
+		
+		<h1 style = "color:green;" >
+			Question 3
+		</h1>
+	
+        <button class=my_button>Click Here</button>
+        <style>
+            .my_button{
+                background-color:yellow;
+                font-size: 35px;
+                margin-top: 200px;
+                padding: 10px;
+                color:rgb(50, 100, 143);
+            }
+            .my_button2{
+                background-color:aqua;
+                font-size: 35px;
+                margin-top: 200px;
+                padding: 10px;
+                color:rgb(50, 100, 143);
+            }
+            </style>      
+        <script>
+            $(document).ready(function() {
+            
+            $(".my_button").click(function(){
+            $('.my_button').removeClass('my_button').addClass('my_button2');
+            })
+            
+            })
+            </script>	
+	</body>
+</html>	
